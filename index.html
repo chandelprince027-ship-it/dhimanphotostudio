@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhiman Studio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0b0b0b;color:#fff;scroll-behavior:smooth}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:#010318;backdrop-filter:blur(8px);z-index:999}
+.logo{font-size:28px;font-weight:bold;color:#d4af37}
+nav a{color:#fff;text-decoration:none;margin:0 10px}
+.hero{height:100vh;position:relative;overflow:hidden}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:1s}
+.slide.active{opacity:1}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.hero-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:2}
+.hero-content h1{font-size:60px;color:#d4af37}
+.btn{display:inline-block;margin-top:20px;padding:14px 28px;background:#d4af37;color:#000;text-decoration:none;border-radius:30px;font-weight:bold}
+section{padding:90px 8%}
+h2{text-align:center;color:#d4af37;margin-bottom:30px}
+.cards,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card,.gallery img{background:#161616;border:1px solid #d4af37;border-radius:15px}
+.card{padding:25px;text-align:center}
+.gallery img{width:100%;height:250px;object-fit:cover}
+.video-container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.video-container video{
+width:100%;
+border-radius:20px;
+border:3px solid gold;
+box-shadow:0 0 20px rgba(255,215,0,0.4);
+}
+.booking{
+text-align:center;
+background:#111;
+color:white;
+}
+.call-btn{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#FFD700;
+color:black;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+}
+.card{
+opacity:0;
+transform:translateY(50px);
+animation:fadeUp 1s forwards;
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+footer{
+background:#010318;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+footer p{
+margin:8px 0;
+}
+.social-links{
+display:flex;
+justify-content:center;
+gap:25px;
+margin:20px 0;
+}
+
+.social-links a{
+font-size:35px;
+color:#FFD700;
+transition:.3s;
+}
+
+.social-links a:hover{
+transform:scale(1.2);
+color:white;
+}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;text-decoration:none;padding:15px 18px;border-radius:50px;font-weight:bold}
+@media(max-width:768px){.hero-content h1{font-size:38px} nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">DHIMAN CINEMATOGRAPHER</div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1600');"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1600');"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1600');"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1600');"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600');"></div>
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Dhiman Studio</h1>
+<p>Wedding • Pre Wedding • Events • Videography</p>
+<a class="btn" href="https://wa.me/917807774779">Book on WhatsApp</a>
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p style="text-align:center">Welcome to Dhiman Photo Studio. <br>
+                              We specialize in Wedding Photography,<br>
+                                Pre-Wedding Shoots, Birthday Events,<br>
+                                   Baby Shoots and Professional Video Editing.<br>
+                                     Our mission is to capture your unforgettable<br>
+                                       moments with creativity and perfection.</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="cards">
+<div class="card"><h3>Wedding Photography</h3></div>
+<div class="card"><h3>Pre Wedding Shoot</h3></div>
+<div class="card"><h3>Drone Shoot</h3></div>
+<div class="card"><h3>Birthday Events</h3></div>
+<div class="card"><h3>Videography</h3></div>
+<div class="card"><h3>Album Design</h3></div>
+<div class="card"><h3>Passport Photos</h3></div>
+<div class="card"><h3>Video Editing</h3></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+
+
+
+
+
+
+<img src="WhatsApp Image 2026-06-10 at 11.33.26 PM.jpeg" alt="Photo 1">
+<img src="WhatsApp Image 2026-06-10 at 11.33.26 PM (2).jpeg" alt="Photo 2">
+<img src="WhatsApp Image 2026-06-10 at 11.33.27 PM.jpeg" alt="Photo 3">
+<img src="WhatsApp Image 2026-06-10 at 11.33.26 PM.jpeg" alt="Photo 1">
+<img src="WhatsApp Image 2026-06-10 at 11.33.26 PM (1).jpeg" alt="Photo 2">
+<img src="WhatsApp Image 2026-06-10 at 11.35.20 PM.jpeg" alt="Photo 3">
+<img src="DSC_8992.JPG" alt="Photo 3">
+<img src="DSC_8935.JPG" alt="Photo 3">
+
+</div>
+</section>
+
+
+<section id="video">
+
+<h2>Our Studio Video</h2>
+
+<div class="video-container">
+
+<video controls autoplay muted loop playsinline>
+    <source src="studio.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+</div>
+
+</section>
+
+<section class="booking">
+
+<h2>Book Your Shoot Now</h2>
+
+<p>Contact us directly on WhatsApp</p>
+
+<a
+href="https://wa.me/917807774779?text=Hello%20I%20want%20to%20book%20a%20photoshoot"
+class="btn"
+target="_blank">
+Book on WhatsApp
+</a>
+
+</section>
+
+<section id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="services">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Best photography service. Highly recommended.</p>
+<h4>- Aman</h4>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Amazing wedding shoot and editing.</p>
+<h4>- Rahul</h4>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Professional team and quality work.</p>
+<h4>- Simran</h4>
+</div>
+
+</div>
+
+</section>
+
+<a href="tel:+917807774779" class="call-btn">
+📞
+</a>
+
+
+
+    <footer id="contact">
+
+
+
+<h3>Dhiman Studio</h3>
+<p>Professional Photography & Videography Services</p>
+
+<p>📍 Your Address Here</p>
+
+<p>📞 +91 7807774779</p>
+
+<p>✉ info@dhimanstudio.com</p>
+>
+
+<div class="social-links">
+
+<a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+target="_blank">
+📸 
+</a>
+
+<a href="https://www.youtube.com/@YOUR_CHANNEL"
+target="_blank">
+▶ 
+</a>
+
+<a href="https://www.facebook.com/YOUR_PAGE"
+target="_blank">
+📘  
+</a>
+
+</div>
+
+
+
+<p>© 2026 Dhiman Studio | All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917807774779">WhatsApp</a>
+
+<script>
+let slides=document.querySelectorAll('.slide');
+let i=0;
+setInterval(()=>{
+slides[i].classList.remove('active');
+i=(i+1)%slides.length;
+slides[i].classList.add('active');
+},4000);
+</script>
+</body>
+</html>
