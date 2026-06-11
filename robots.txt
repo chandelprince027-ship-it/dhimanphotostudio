@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dhimanphotostudio.vercel.app/sitemap.xml
